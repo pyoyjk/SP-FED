@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aspirations</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- Bootstrap JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <!-- My CSS -->
+    <link rel="stylesheet" href="../css/main.css"/>
+    <link rel="stylesheet" href="../css/aspirations.css"/>
+    <!-- My Scripts -->
+    <script src="../scripts/fade-in.js" defer></script>
+    <script src="../scripts/navbar.js" defer></script>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Playfair&#43;Display:700,900&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400&family=Josefin+Slab:wght@300&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300&display=swap" rel="stylesheet">
+    <!-- Icon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="../favicon_io//site.webmanifest">
+</head>
+
+<body>
+
+<!--_______________________ Navbar _______________________-->
+
+    <nav class="navbar fixed-top navbar-expand-sm bg-black navbar-dark fs-nav p-nav">
+        <div class="container">
+    
+            <!-- Logo -->
+            <a href="index.html" class="navbar-brand">
+                A
+                <span class="flip">P</span>
+            </a>
+    
+            <!-- Collapse -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Links -->
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item px-1">
+                    <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item px-1">
+                    <a href="lifeinsp.html" class="nav-link">Life in SP</a>
+                    </li>
+                    <li class="nav-item px-1">
+                    <a href="aspirations.html" class="nav-link">Aspirations</a>
+                    </li>
+                    <li class="nav-item px-1">
+                    <a href="feedback.html" class="nav-link">Feedback</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+<!--_______________________ Header _______________________-->
+
+    <header class="container-fluid d-flex justify-content-center p-0 col-12">
+        <div id="headerbg"></div>
+        <h1 class="fade-down">
+            aspirations
+        </h1>
+        <h2 class="fade-up">
+            when i grow up...
+        </h2>
+    </header>
+
+
+<!-- Main starts -->
+<main>
+
+        
+<!--_______________________ Preamble _______________________-->
+
+        <div class="container-fluid d-flex justify-content-center bg-black" id="careerspreamble">
+            <div class="col-md-5 col-10 fade-appear">
+                <blockquote>
+                    When I went to school, they asked me what I <i>wanted to be when I grew up.</i> I wrote down <b><mark>‘happy’.</mark></b> They told me I didn’t understand the assignment, and I told them they <i>didn’t understand <b><u>life</u>.</b></i>”
+                </blockquote>
+                <p><i>-John Lennon</i></p>
+            </div>
+
+            <img src="../images/johnlennon.jpg" alt="" class="col-5 d-none d-md-block img-fluid">
+            <!-- Source: https://id.pinterest.com/pin/349451252313679863/ -->
+        </div>
+
+
+<!--_______________________ Carousel _______________________-->
+
+        <div id="carouselslides" class="carousel slide" data-bs-ride="carousel">
+
+            <!-- Indicators -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselslides" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselslides" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselslides" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+
+            <!-- Slides -->
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="5000">
+                    <img src="../images/programmer.jpg" class="d-block w-100 img-fluid" alt="Programmer">
+                    <!-- Source: https://www.inbuild.ai/blog -->
+                    <div class="carousel-caption">
+                        <h5>Career 1</h5>
+                        <p>Programmer</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <img src="../images/writer.jpg" class="d-block w-100 img-fluid" alt="Writer">
+                    <!-- Source: https://wallpapercave.com/w/wp7110690 -->
+                    <div class="carousel-caption">
+                        <h5>Career 2</h5>
+                        <p>Writer</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <img src="../images/guitarist1.jpg" class="d-block w-100 img-fluid" alt="Guitarist">
+                    <!-- Source: https://www.wallpaperflare.com/man-playing-guitar-in-front-of-people-audience-band-concert-wallpaper-uinqo/download -->
+                    <div class="carousel-caption">
+                        <h5>Career 3</h5>
+                        <p>Guitarist</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Prev/Next -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselslides" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselslides" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        
+        <!-- Divider -->
+        <div class="divider" id="divider1"></div>
+
+
+<!--_______________________ Articles _______________________-->
+
+        <div id="articles" class="container-fluid p-0">
+
+            <!-- Career 1 -->
+            <div id="career1" class="bg-dark text-light d-flex justify-content-around align-items-center">
+                <div class="col-lg-6 d-flex justify-content-center">
+                    <img src="../images/articleprogrammer1.jpg" alt="" class="img-fluid"/>
+                </div>
+            <article class="col-lg-6 col-md-7 col-sm-8 col-10 fade-appear">
+                <h2>Programmer</h2>
+                <p class="col-sm-10 mt-4">
+                    The obvious career choice would be something along the lines of a programmer. This includes options like database architect, cybersecurity analyst, video game developer etc. I am genuinely interested in this field of work and love my experience programming so far, so I hope that it'll stay this way and I that I'll enjoy the job I end up in.
+                </p>
+            </article>
+            </div>
+    
+            <!-- Career 2 -->
+            <div id="career2" class="bg-warning bg-opacity-50 text-black d-flex justify-content-around align-items-center">
+            <article class="col-lg-6 col-md-7 col-sm-8 col-10 fade-appear">
+                <h2>Writer</h2>
+                <p class="col-sm-10 mt-4">
+                    When I was very young, I loved to write. I used to write stories and made my parents and teachers read them. Even though the stories were terrible, they still encouraged me and told me they enjoyed it. Unfortunately, nowadays I've begun to read and write less than before. Although I don't actually see this as a viable career, I think it would be an interesting one.
+                </p>
+            </article>
+            <div class="col-sm-lg d-flex justify-content-center">
+                <img src="../images/articlewriter.jpg" alt="" class="img-fluid"/>
+            </div>
+            </div>
+    
+            <!-- Career 3 -->
+            <div id="career3" class="bg-success bg-opacity-75 text-black d-flex justify-content-around align-items-center">
+                <div class="col-lg-6 d-flex justify-content-center">
+                    <img src="../images/articleguitar.jpg" alt="" class="img-fluid"/>
+                </div>
+            <article class="col-lg-6 col-md-7 col-sm-8 col-10 fade-appear">
+                <h2>Guitarist</h2>
+                <p class="col-sm-10 mt-4">
+                    This one is the least realisitic but probably would be the most fun path of the three. I love playing the guitar and would be willing to do it daily for a living. At the end of the day the music industry is extremely difficult to make a stable living in and I hate performing anyways so this is a very unlikely path, but still one worth listing.
+                </p>
+            </article>
+            </div>
+
+        </div>
+
+
+        <!-- Divider -->
+        <div class="divider" id="divider2"></div>
+
+
+<!--_______________________ Summary _______________________-->
+
+        <div id="summary" class="container">
+            <h1 class="fade-down d-flex justify-content-center">Summary</h1>
+            <hr class="fade-right d-flex justify-content-center"/>
+            
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 mb-3 text-center">
+                <div class="col fade-right">
+                    <div class="card mb-4 rounded-3 shadow-sm">
+                        <div class="card-header py-3 bg-dark text-light">
+                            <h4 class="my-0 fw-normal">Programmer</h4>
+                        </div>
+                        <div class="card-body">
+                            <h1>
+                                <small class="text-muted fw-light">The</small>
+                                Wise Choice
+                            </h1>
+                            <a href="#career1" class="w-100 btn btn-lg btn-outline-dark">View</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col fade-up">
+                    <div class="card mb-4 rounded-3 shadow-sm">
+                        <div class="card-header py-3 bg-warning bg-opacity-75">
+                            <h4 class="my-0 fw-normal">Writer</h4>
+                        </div>
+                        <div class="card-body">
+                            <h1>
+                                <small class="text-muted fw-light">The</small>
+                                Child's Dream
+                            </h1>
+                            <a href="#career2" class="w-100 btn btn-lg btn-outline-warning">View</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col fade-left">
+                    <div class="card mb-4 rounded-3 shadow-sm">
+                        <div class="card-header py-3 bg-success bg-opacity-75">
+                            <h4 class="my-0 fw-normal">Guitarist</h4>
+                        </div>
+                        <div class="card-body">
+                            <h1>
+                                <small class="text-muted fw-light">The</small>
+                                New Passion
+                            </h1>
+                            <a href="#career3" class="w-100 btn btn-lg btn-outline-success">View</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <h2 class="display-6 text-center">Comparison</h2>
+        
+            <div class="table-responsive">
+                <table class="table table-hover text-center">
+                <thead>
+                    <tr>
+                    <th style="width: 34%;"></th>
+                    <th style="width: 22%;">Programmer</th>
+                    <th style="width: 22%;">Writer</th>
+                    <th style="width: 22%;">Guitarist</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                    <th scope="row" class="text-start">Stability</th>
+                    <td><img src="../images/tick.png" width="24" height="24" alt=""></td>
+                    <td></td>
+                    <td></td>
+                    </tr>
+                    <tr>
+                    <th scope="row" class="text-start">Enjoyability</th>
+                    <td><img src="../images/tick.png" width="24" height="24" alt=""></td>
+                    <td><img src="../images/tick.png" width="24" height="24" alt=""></td>
+                    <td><img src="../images/tick.png" width="24" height="24" alt=""></td>
+                    </tr>
+                    <tr>
+                    <th scope="row" class="text-start">Creativity</th>
+                    <td></td>
+                    <td><img src="../images/tick.png" width="24" height="24" alt=""></td>
+                    <td><img src="../images/tick.png" width="24" height="24" alt=""></td>
+                    </tr>
+                </tbody>
+                </table>
+
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+<!--_______________________ Footer _______________________-->
+
+    <div class="container-fluid m-0 p-0 bg-dark">
+        <footer class="d-flex flex-wrap justify-content-around align-items-center py-3">
+            <p class="col-md-4 mb-0 text-light">&copy; 2022 Andrew Poh</p>
+        
+            <!-- Logo -->
+            <a href="#" id="footerlogo" class="col-md-4 d-flex justify-content-center">
+            AP
+            </a>
+
+            <!-- Icons -->
+            <ul class="nav col-md-4 justify-content-end">
+            <li class="nav-item">
+                <a href="https://www.instagram.com/andrewdpoh/?hl=en" target="_blank">
+                <img src="../images/icons/instagram.png" alt="" class="nav-link socialicon"/>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="https://twitter.com/BarackObama" target="_blank">
+                <img src="../images/icons/twitter.png" alt="" class="nav-link socialicon"/>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="mailto:andrewdpoh@gmail.com" target="_blank">
+                <img src="../images/icons/email.png" alt="" class="nav-link socialicon"/>
+                </a>
+            </li>
+            </ul>
+            <!-- source: https://www.iconfinder.com/iconsets/black-white-social-media -->
+
+        </footer>
+    </div>
+</body>
+</html>

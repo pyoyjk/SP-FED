@@ -1,0 +1,227 @@
+/*-------------------------Header-------------------------*/
+
+header{
+    height: 120vh;
+    font-family: 'Josefin Sans', sans-serif;
+}
+#lifeinspbg{
+    height: 120vh;
+    width: 100vw;
+    background-image: url("../images/lifeinsp.jpg");
+    /* source: https://wallpaper.mob.org/gallery/tag=smooth/ */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    z-index: -1;
+}
+header h1{
+    margin-top: 14rem;
+    color: rgb(255, 255, 255);
+    display: flex;
+    position: absolute;
+    font-weight: 400;
+    font-size: 9rem;
+}
+@media (max-width: 800px) {
+    header h1 {
+        font-size: 18vw;
+    }
+}
+header > h2{
+    margin-top: 25rem;
+    color: rgb(255, 255, 255);
+    font-weight: 200;
+    font-size: 2rem;
+    font-family: 'Josefin Sans', sans-serif;
+    position: absolute;
+    font-style: italic;
+}
+@media (max-width: 670px) {
+    header h2 {
+        font-size: 4vw;
+        margin-top: 22rem;
+    }
+}
+
+
+/*-------------------------NY/SP Section-------------------------*/
+
+/* Main styles */
+main h1, h2, h3, h4, h5, h6 {
+    font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+}
+main p {
+    font-weight: 300;
+}
+body {
+    background-color: rgb(255, 247, 235);
+}
+
+
+/* Subheader styles */
+.subheader {
+    margin-top: 8rem;
+}
+.display-4 {
+    font-size: 2.5rem;
+}
+@media (min-width: 768px) {
+    .display-4 {
+        font-size: 3rem;
+    }
+}
+
+/* Article styles */
+article {
+    margin-bottom: 4rem;
+}
+.article-title {
+    font-size: 2.5rem;
+}
+.article-date {
+    margin-bottom: 1.25rem;
+    color: #727272;
+}
+article p {
+    font-size: 1rem;
+    font-weight: 400    
+}
+@media(max-width: 768px) {
+    article {  
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+}
+/*-------------------------Timetable Section-------------------------*/
+
+#timetablediv{
+    justify-items: center;
+    margin-top: 4rem;
+    margin-bottom: 5rem;
+}
+#timetablediv table{
+    caption-side: top;
+    width: 700px
+}
+#timetable{
+    border-collapse: collapse;
+    font-size: 1rem;
+    height: 27rem;
+    margin: auto;
+}
+#timetable th, #timetable td{
+    border: 0.1rem solid rgb(0, 0, 0);
+    vertical-align: middle;
+    text-align: center;
+    font-weight: 500;
+}
+#timetable thead{
+    background: rgb(170, 170, 170);
+    color: rgb(0, 0, 0);
+    height: 4rem;
+    font-weight: 200;
+}
+#column1{
+    background: rgb(255, 222, 222);
+    width: 7rem;
+    font-weight: 100;
+}
+.datacells{
+    background: rgb(255, 250, 205);
+    width: 6rem;
+}
+#timetable caption{
+    font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+    font-size: 2.5rem;
+    color: rgb(0, 0, 0);
+}
+
+/*-------------------------SOC Section-------------------------*/
+
+/* General Styles */
+#socdiv{
+    color: rgb(200, 200, 200);
+    color:rgb(255, 255, 255);
+}
+#socbg{
+    height: 190rem;
+    width: 100vw;  
+    background-image: url("../images/soc.jpg");
+    /* source: https://wallpaperaccess.com/dark-blue-abstract-technology */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: -1;
+}
+@media(max-width: 780px){
+    #socbg{
+        height: 260rem;
+    }
+}
+#socdiv .row{
+    margin-bottom: 13rem;
+}
+/* Header Styles */
+#socdiv h1{
+    text-align: center;
+    font-weight: 300;
+    font-size: 7rem;
+    padding-top: 8rem;
+    padding-bottom: 3rem;
+}
+#socdiv h2{
+    text-align: center;
+    font-weight: 300;
+    font-size: 2rem;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Icon Styles */
+#socdiv img{
+    height: 25rem;
+    width: 25rem;
+    object-fit: cover;
+}
+@media (max-width: 1000px){
+    #socdiv img{
+        height: 20rem;
+        width: 20rem;
+    }
+}
+#socdiv a{
+    transition: all 0.1s ease-in-out;
+    filter: brightness(0.8);
+}
+#socdiv a:hover{
+    transform: scale(1.05);
+    filter: brightness(1.2);
+}
+
+/* Text Styles */
+#socdiv article{
+    text-align: justify;
+    margin-top: 4rem;
+}
+#socdiv h2{
+    margin-bottom: 6rem;
+}
+@media(max-width: 900px){
+    #socdiv h2{
+        display: none;
+    }
+}
+#socdiv h3{
+    font-size: 3.5rem;
+    font-weight: 300;
+}
+#socdiv p{
+    margin-top: 2rem;
+    font-size: 1rem;
+}
+
+@media (max-width: 768px){
+    #socdiv article{
+        margin-top: 3rem;
+        text-align: center;
+    }
+}

@@ -1,0 +1,199 @@
+@charset "UTF-8";
+
+/* reset styles */
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    background: transparent;
+    transition: none;
+}
+a{
+    text-decoration: none;
+}
+
+/* body properties */
+body{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    overflow-x: hidden;
+}
+
+/* -------------------------Navbar------------------------- */
+.fs-nav{
+    font-size: 1.14rem;
+}
+.p-nav{
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+}
+nav{
+    transition: top 0.3s;
+    z-index: 2;
+}
+nav li:hover{
+    transform: scale(0.9);
+    transition: all 0.15s;
+}
+
+/* Logo */
+.navbar-brand{
+    border: 0.05rem solid rgb(255, 255, 255);
+    border-radius: 2rem;
+    padding: 0.35rem 0.5rem 0rem 0.5rem;
+    width: 3rem;
+    height: 3rem;
+    display: inline-block;
+    transition: all 0.2s;
+    font-size: 1.5rem;
+    font-weight: 100;
+    font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+    color: rgb(255, 255, 255);
+}
+
+.navbar-brand:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+.navbar-brand:hover > .flip{
+    transform: scale(-1, 1);
+}
+.flip{
+    position: absolute;
+    transform: scale(1, 1);
+    transition: all 0.2s;
+}
+/*-------------------------Footer-------------------------*/
+
+.footerclass{
+    z-index: 10;
+}
+#footerlogo{
+    border: 0.1rem solid rgb(255, 255, 255);
+    border-radius: 2rem;
+    padding: 0.75rem 0.5rem -0rem 0.5rem;
+    width: 3rem;
+    height: 3rem;
+    display: inline-block;
+    transition: all 0.2s;
+    font-size: 1rem;
+    font-weight: 300;
+    color: rgb(255, 255, 255);
+}
+#footerlogo:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    transform: scale(1.1);
+}
+.socialicon{
+    float: left;
+    height: 2.8rem;
+    transition: all .1s ease-in-out
+}
+.socialicon:hover{
+    transform: scale(1.15) rotate(20deg);
+}
+@media(max-width: 576px) {
+    .socialicon{
+        margin-right: -0.8rem;
+    }
+}
+@media(max-width: 576px) {
+    footer p{
+        font-size: 0.9rem;
+        margin-left: -0.4rem;
+    }
+}
+/*-------------------------Animations-------------------------*/
+
+/* Fade ins */
+.fade-in-left{
+    animation: fadeInLeft 2.5s;
+}
+@keyframes fadeInLeft{
+    0%{
+        opacity: 0;
+        transform: translateX(8vw);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}  
+.fade-in-right{
+    animation: fadeInRight 2.5s;
+}
+@keyframes fadeInRight{
+    0%{
+        opacity: 0;
+        transform: translateX(-8vw);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}  
+.fade-in-up{
+    animation: fadeInUp 2.5s;
+}
+@keyframes fadeInUp{
+    0%{
+        opacity: 0;
+        transform: translateY(8vw);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}  
+.fade-in-down{
+    animation: fadeInDown 2.5s;
+}
+@keyframes fadeInDown{
+    0%{
+        opacity: 0;
+        transform: translateY(-8vw);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.fade-in-appear{
+    animation: fadeIn 2s;
+}
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}  
+
+/* typewriter */
+.typewriter-animation{
+    overflow: hidden;
+    border-right: .15em solid rgb(255, 165, 0);
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    height: fit-content;
+    animation: 
+        typing 3.5s steps(40, end),
+        blink-caret .75s step-end infinite;
+}
+  
+/* The typing effect */
+@keyframes typing{
+    0%{width: 0}
+    100%{width: 53rem}
+}
+  
+/* The blinking cursor */
+@keyframes blink-caret{
+    0%, 100%{border-color: transparent}
+    50%{border-color: rgb(255, 165, 0);}
+}

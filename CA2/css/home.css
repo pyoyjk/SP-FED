@@ -1,0 +1,211 @@
+@charset "UTF-8";
+
+/*-------------------------Body Styles-------------------------*/
+
+#content{
+    width: 100%;
+    background-image: url("../images/bodybg.jpg");
+    /* source: https://wallpaperbat.com/black-mountain-wallpapers */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#content h1{
+    font-size: 7rem;
+    font-weight: 500;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    color: rgb(255, 255, 255);
+}
+@media (max-width: 800px) {
+    #content h1 {
+    font-size: 14.5vw;
+    }
+}
+/*-------------------------Header Styles-------------------------*/
+
+header{
+    height: 105vh;
+}
+#headerbgimage{
+    height: 105vh;
+    width: 100vw;
+    background-image: url("../images/homeheader.jpg");
+    /* source: https://unsplash.com/s/photos/dark-nature */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    filter: brightness(1.3);
+    z-index: -1;
+}
+#headerh1div{
+    margin-top: 14rem;
+    color: rgb(255, 255, 255);
+    display: flex;
+    position: absolute;
+}
+header h1{
+    font-weight: 400;
+    font-size: 9rem;
+}
+@media (max-width: 800px) {
+    header h1 {
+      font-size: 18vw;
+    }
+}
+header > h2{
+    margin-top: 11rem;
+    left: 20vw;
+    color: rgb(255, 255, 255);
+    font-weight: 300;
+    font-size: 3.5rem;
+    font-family: 'Josefin Sans', sans-serif;
+    position: absolute;
+}
+@media (max-width: 800px) {
+    header h2 {
+      font-size: 7vw;
+      right: 3rem;
+    }
+}
+header a{
+    color: rgba(190, 190, 190, 0.66);
+    margin-top: 31rem;
+    position: absolute;
+    font-size: 1.8rem;
+    transform: scale(2, 1);
+}
+header a:hover > .flip{
+    transform: scale(-1, 1);
+    color: rgb(255, 255, 255);
+}
+/*-------------------------Interests Section-------------------------*/
+
+/* Row Styles */
+#interests .row{
+    margin-bottom: 8rem;
+}
+
+/* Text Styles */
+#interests{
+    color: rgb(255, 255, 255);
+    padding-bottom: 7rem;
+}
+
+#interests h2{
+    font-size: 3.5rem;
+}
+#interests p{
+    font-size: 1.1rem;
+    font-weight: 300;
+    margin-top: 1.3rem;
+    /* text-align: justify; */
+}
+@media (max-width: 768px){
+    #interests article{
+        margin-top: 3rem;
+        text-align: center;
+    }
+}
+/* Image Styles */
+#interests img {
+    height: 30rem;
+    width: 30rem;
+    object-fit: cover;
+}
+@media (max-width: 768px){
+    #interests img{
+        height: 24rem;
+        width: 24rem;
+        border: 1rem ridge rgb(190, 190, 190);
+        box-shadow: 0.7rem 0.7rem 0.7rem rgb(0, 0, 0);
+    }
+}
+
+/* ------------------------Personality Section------------------------- */
+
+/* General Styles */
+#personality{
+    padding-bottom: 12rem;
+}
+#personality hr{
+    margin: auto;
+    margin-top: -8rem;
+    margin-bottom: 3rem;
+    border-top: 0.2rem solid rgb(255, 139, 44);
+    width: 12rem;
+    opacity: 1;
+}
+@media (max-width: 640px) {
+    #personality hr {
+      width: 27vw;
+    }
+}
+/* Text Styles */
+#personality p{
+    color: rgb(255, 255, 255);
+    font-size: 1.4rem;
+    font-weight: 300;
+    text-align: center;
+    font-family: "Noto Serif", serif;
+}
+@media (max-width: 640px) {
+    #personality p {
+      font-size: 3.7vw;
+    }
+}
+/* ------------------------Values Section------------------------- */
+
+/* General Styles */
+#values{
+    color: rgb(255, 255, 255);
+    padding-bottom: 20rem;
+}
+#values hr{
+    margin: auto;
+    border-top: 0.2rem solid rgb(255, 115, 0);
+    width: 8rem;
+    opacity: 1;
+}
+
+/* Text Styles */
+#values > #articlediv{
+    text-align: center;
+    margin-top: -8rem;
+    font-family: "Playfair Display", serif;
+}
+#values article{
+    margin-top: 8rem;
+}
+#values h2{
+    font-weight: 500;
+    font-size: 4.5rem;
+}
+@media (max-width: 800px) {
+    #values h2 {
+      font-size: 8.5vw;
+    }
+}
+#values h3{
+    font-weight: 300;
+    font-size: 1.2rem;
+}
+
+#values p{
+    font-weight: 300;
+    font-size: 1.3rem;
+    font-style: italic;
+    margin-top: 0.1rem;
+}
+
+/* ------------------------Countdown Section------------------------- */
+#birthdayCountdown{
+    background-color: black;
+    background-image: linear-gradient(30deg, rgb(177, 0, 0), rgb(0, 20, 205));
+    background-size: 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+}
